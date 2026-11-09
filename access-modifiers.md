@@ -1,15 +1,15 @@
 ## Introduction
 
-Object-Oriented Programming (OOP) uses access modifiers to protect data in class. TypeScript provides four modifiers: `public`, `private`, `protected`,`readonly`. 
+Object-Oriented Programming (OOP) uses access modifiers to protect data on classes. TypeScript provides four modifiers: `public`, `private`, `protected`, and `readonly`. These modifiers control how class properties can be accessed.
 
 ## How Access Modifiers Work
 
-In TypeScript, class properties `public` by default. This means they can be accessed and changed from anywhere.
+In TypeScript, class properties are `public` by default. This means they can be accessed and changed from anytime.
 
 - **Public:** Anyone can access or change the property.
-- **Private:** Only the same class can access the property. Other classes cannot use it .
-- **Protected:** The same class and its child classes can access the property. Outside code cannot access it.
-- **Readonly:** The property can only be set once. After that it value cannot be changed.
+- **Private:** Only the same class can access the property.
+- **Protected:** The same class and its child classes can access the property.
+- **Readonly:** The property can only be assigned a value once, can't modify this .
 
 ### Example:
 
@@ -38,9 +38,9 @@ In this example:
 - `brand` is public, so anyone can access it.
 - `vinNumber` is private, so only the Vehicle class can use it.
 - `speed` is protected, so the Car class can also use it.
-- `wheels` is readonly, so its value cannot be changed .
+- `wheels` is readonly, so its value cannot be changed after set.
 
 ## Conclusion
 
-Access modifiers help us protect data and keep our code organized. We use `private` to hide data, `protected` to share data with child classes, `readonly` to stop changes, and `public` when everyone needs access.
-
+Access modifiers help us protect data and keep our code organized. They make our applications safer and easy to maintain. We use `private` to hide data, `protected` to share data with child classes, `readonly` to prevent changes, and `public` when everyone needs access. Choosing the correct modifier helps us write better and cleaner  code.
+```
